@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from 'react';
 import "./chats.css";
-import { users, chats } from "../data";
+import { users, chats } from "../data"; // remove this //
 import Rooms from "./roomHandle";
 import Memroom from "./messageHandle";
 import axios from "axios";
@@ -13,14 +13,23 @@ const Chats = (props) => {
       messages: [],
     };
 
+    const [data, setData] = useState()
+    const [refresh, setRefresh] = useState(true)
+
   const getData = async () => {
     await axios
     .get("http://localhost:8000/record")
     .then( function (response) {
       console.log(response.data)
+      setData(response.data)
     })
-  
   }
+
+  setState( (state) => !state) // inside the loop
+
+  // usestate dep array has this var (state)
+  
+
 
 
 
