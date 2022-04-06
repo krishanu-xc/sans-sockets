@@ -1,0 +1,21 @@
+.chats-main{
+    width: 100%;
+    /* border: 2px solid red; */
+    height: calc(100vh - 64px);
+    display: flex;
+}
+
+.chat-names{
+    width: 35%;
+    height: 100%;
+    padding: 5px;
+    border-right: 5px dashed #0d8f8f;
+}
+
+.chat-area{
+    width: 65%;
+    height: 100%;
+    /* border: 2px solid green; */
+    padding: 5px;
+}
+

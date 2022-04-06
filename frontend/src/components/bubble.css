@@ -1,0 +1,15 @@
+.bubble-main {
+  width: 100%;
+  /* border: 2px solid red; */
+  padding: 5px;
+  display: flex;
+}
+
+.bubble-in {
+  max-width: 50%;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 10px;
+  height: 100%;
+  border: 2px solid black;
+}
